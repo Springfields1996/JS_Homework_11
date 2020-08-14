@@ -6,11 +6,11 @@ const days = select('span[data-value="days"]');
 const secs = select('span[data-value="secs"]');
 
 function remainingTime() {
-  let time = targetDate.getTime() - Date.now();
-  countingFormulas(time);
+  countingFormulas();
 }
 
 function countingFormulas(time) {
+  let time = targetDate.getTime() - Date.now();
   const daysTime = Math.floor(time / (1000 * 60 * 60 * 24));
   const hoursTime = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minsTime = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
