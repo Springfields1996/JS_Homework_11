@@ -193,3 +193,41 @@
 //   .then((data) => data.json())
 //   .then((data) => console.log(data))
 //   .catch((err) => console.log(err));
+
+const body = document.querySelector("body");
+
+// function getCurrencyExchange() {
+//   let api = fetch("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5");
+//   return api;
+// }
+
+// getCurrencyExchange()
+//   .then((api) => api.json())
+//   .then((api) =>
+//     api.map((el) =>
+//       body.insertAdjacentHTML(
+//         "afterbegin",
+//         `<div><p>${el.ccy}: ${el.buy}, ${el.sale}<p></div>`
+//       )
+//     )
+//   );
+
+// const inputCity = document.querySelector("#input1");
+// const inputStreet = document.querySelector("#input2");
+
+// setTimeout(() => {
+//   inputCity.addEventListener("input", (event) => {
+//     let city = new FormData();
+//     console.log(city, city.value);
+//   });
+// }, 1000);
+
+// function getAddress() {
+//   const keyAPI = "0e13905b619541988abd6bd979459f44";
+//   let address = fetch(
+//     `https://newsapi.org/v2/sources?apiKey=0e13905b619541988abd6bd979459f44`
+//   );
+//   return address;
+// }
+
+// getAddress().then((address) => console.log(address));
