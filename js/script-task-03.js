@@ -9,7 +9,7 @@ function remainingTime() {
   countingFormulas();
 }
 
-function countingFormulas(time) {
+function countingFormulas() {
   let time = targetDate.getTime() - Date.now();
   const daysTime = Math.floor(time / (1000 * 60 * 60 * 24));
   const hoursTime = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
